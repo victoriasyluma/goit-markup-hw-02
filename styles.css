@@ -1,0 +1,123 @@
+@font-face {
+  font-family: Roboto;
+  src: url(/Roboto/Roboto-Regular.ttf);
+}
+:root {
+  --text-black-color: #212121;
+  --text-link-color: #2196f3;
+  --text-white-color: #ffffff;
+  --main-font-family: 'Roboto';
+  --text-grey-color: #757575;
+  --main-background-darkblue: #2f303a;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+* {
+  font-family: 'Roboto';
+}
+@media screen and (min-width: 900px) {
+  header.main-header {
+    padding: 0 100px;
+  }
+}
+header.main-header {
+  display: flex;
+  padding: 0 20px;
+  height: 65px;
+  border-bottom: 0.5px solid lightgray;
+}
+header.main-header nav,
+header.main-header ul {
+  display: flex;
+  align-items: center;
+}
+header.main-header nav {
+  flex: 1;
+}
+header.main-header nav > a:first-of-type {
+  font-weight: 600;
+  color: var(--text-black-color);
+  text-decoration: none;
+  font-size: 26px;
+  font-family: 'Raleway';
+}
+header.main-header nav > a:first-of-type span {
+  color: var(--text-link-color);
+}
+header.main-header li {
+  margin-left: 100px;
+  list-style: none;
+}
+header.main-header li a {
+  text-decoration: none;
+  color: var(--text-black-color);
+}
+header.main-header li a:hover {
+  color: var(--text-link-color);
+}
+.main-page {
+  background-color: #2f303a;
+}
+.main-page-text {
+  color: var(--text-white-color);
+  font-family: var(--main-font-family);
+  font-weight: 600;
+  font-size: 44px;
+}
+.main-section-list {
+  list-style: none;
+}
+.main-section-list h2 {
+  font-size: 14px;
+}
+.main-section-list p {
+  color: var(--text-grey-color);
+  font-size: 14px;
+}
+.main-page-button {
+  background-color: var(--text-link-color);
+  color: var(--text-white-color);
+  font-weight: 700;
+  font-size: 16px;
+}
+.main-section-list {
+  list-style: none;
+}
+.work-example h2 {
+  font-size: 36px;
+}
+.work-example ul {
+  list-style: none;
+}
+.our-team h3,
+.our-team p {
+  text-align: center;
+  font-size: 16px;
+  color: var(--text-grey-color);
+}
+.our-team ul {
+  list-style: none;
+}
+.footer {
+  background-color: var(--main-background-darkblue);
+}
+.logo {
+  font-size: 26px;
+  color: var(--text-white-color);
+  text-decoration: none;
+}
+.logo span {
+  color: var(--text-link-color);
+}
+address {
+  margin-top: 20px;
+}
+address a {
+  color: var(--text-white-color);
+  text-decoration: none;
+  font-size: 14px;
+  font-style: normal;
+}
