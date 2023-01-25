@@ -10,6 +10,8 @@
   --main-font-family: 'Roboto';
   --text-grey-color: #757575;
   --main-background-darkblue: #2f303a;
+  --cursor-pointer: pointer;
+  --grey-color-buttons: #f5f4fa;
 }
 
 body,
@@ -117,10 +119,17 @@ header.main-header li a:hover {
 }
 
 .our-team {
-  h3,
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    color: var(--text-black-color);
+    text-align: center;
+    font-size: 19px;
+  }
   p {
     text-align: center;
-    font-size: 16px;
+    font-size: 19px;
     color: var(--text-grey-color);
   }
 
@@ -150,5 +159,37 @@ address {
     text-decoration: none;
     font-size: 14px;
     font-style: normal;
+  }
+}
+
+.main-button-list-portfolio {
+  list-style: none;
+  li button {
+    font-size: 16px;
+    background-color: var(--grey-color-buttons);
+    border: none;
+    border-radius: 4px;
+    width: 112px;
+    height: 38px;
+    color: var(--text-black-color);
+    cursor: pointer;
+
+    &:active {
+      background-color: var(--text-link-color);
+      color: var(--text-white-color);
+    }
+  }
+}
+
+.our-examples {
+  list-style: none;
+  li {
+    h2 {
+      font-size: 18px;
+      color: var(--text-black-color);
+    }
+    p {
+      color: var(--text-grey-color);
+    }
   }
 }
