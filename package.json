@@ -6,5 +6,6 @@
   "license": "MIT",
   "devDependencies": {
     "lite-server": "^2.6.1"
-  }
+  },
+  "repository": "https://github.com/victoriasyluma/goit-markup-hw-02.git"
 }
