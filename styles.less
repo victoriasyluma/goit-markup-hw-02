@@ -1,13 +1,8 @@
-@font-face {
-  font-family: Roboto;
-  src: url('./Roboto/Roboto-Regular.ttf');
-}
-
 :root {
   --text-black-color: #212121;
   --text-link-color: #2196f3;
   --text-white-color: #ffffff;
-  --main-font-family: 'Roboto';
+  --main-font-family: 'Roboto', sans-serif;
   --text-grey-color: #757575;
   --main-background-darkblue: #2f303a;
   --cursor-pointer: pointer;
@@ -19,6 +14,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: var(--main-font-family);
+  background-color: #ffffff;
 }
 
 @media screen and (min-width: 900px) {
@@ -55,7 +51,9 @@ html {
 .logo {
   text-decoration: none;
   font-size: 26px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
+  line-height: 31px;
+  letter-spacing: 0.03em;
 }
 
 header.main-header {
@@ -66,12 +64,21 @@ header.main-header {
 
   .logo {
     color: var(--text-black-color);
+    font-size: 26px;
+    line-height: 31px;
+
+    letter-spacing: 0.03em;
   }
 }
 
 .footer {
   .logo {
     color: var(--text-white-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+
+    letter-spacing: 0.03em;
   }
 }
 
@@ -88,6 +95,8 @@ header.main-header {
   color: var(--text-black-color);
   font-size: 14px;
   font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 
 header.main-header li a:hover {
@@ -100,19 +109,26 @@ header.main-header li a:hover {
 
 .main-page-text {
   color: var(--text-white-color);
-  font-weight: 600;
+  font-weight: 900;
   font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
 }
 
 .main-section-list {
   .main-section-list-title {
     font-size: 14px;
     color: var(--text-black-color);
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
   }
 
   .main-section-list-paragraph {
     color: var(--text-grey-color);
     font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -122,27 +138,46 @@ header.main-header li a:hover {
   font-weight: 700;
   font-size: 16px;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .work-example {
   .work-example-title {
     font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
   }
 }
 
 .our-team {
   .our-team-title {
     font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
   }
   .our-team-names {
     color: var(--text-black-color);
     text-align: center;
     font-size: 19px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-weight: 500;
   }
   .our-team-position {
     text-align: center;
-    font-size: 19px;
     color: var(--text-grey-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -162,9 +197,17 @@ header.main-header li a:hover {
     text-decoration: none;
     font-size: 14px;
     font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.03em;
   }
 }
 
+.address-links {
+  &:hover,
+  &:focus {
+    color: var(--text-link-color);
+  }
+}
 .portfolio-button {
   font-size: 16px;
   background-color: var(--grey-color-buttons);
@@ -174,13 +217,32 @@ header.main-header li a:hover {
   height: 38px;
   color: var(--text-black-color);
   cursor: pointer;
+  font-size: 16px;
+  line-height: 26px;
 
-  &:hover {
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
     background-color: var(--text-link-color);
     color: var(--text-white-color);
   }
 }
 
+.img-title {
+  font-weight: 700;
+
+  line-height: 36px;
+
+  letter-spacing: 0.06em;
+}
+.img-paragraph {
+  font-size: 16px;
+  line-height: 30px;
+
+  letter-spacing: 0.03em;
+}
 .font-size-18 {
   font-size: 18px;
 }
